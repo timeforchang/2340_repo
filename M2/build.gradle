@@ -13,6 +13,8 @@ apply plugin: "java"
 apply plugin: "application"
 
 defaultTasks "jar"
+version = "1.0"
+sourceCompatibility = 1.8
 
 mainClassName = 'edu.gatech.oad.antlab.pkg1.AntLabMain'
 
@@ -20,6 +22,7 @@ jar {
     manifest {
         attributes  "Main-Class": "edu.gatech.oad.antlab.pkg1.AntLabMain",
                     "Implementation-Version" : "1.0",
+                    "Implementation-Title" : "M2 Gradle",
                     "Class-Path": "../../lib/resources.jar"
     }
 }
@@ -27,4 +30,9 @@ jar {
 // In this section you declare the dependencies for your production and test code
 dependencies {
     compile files("lib/resources.jar")
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+}
+
+repositories {
+   mavenCentral()
 }

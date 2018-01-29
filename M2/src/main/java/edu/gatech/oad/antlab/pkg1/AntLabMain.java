@@ -89,6 +89,9 @@ import edu.gatech.oad.antlab.pkg2.*;
 
     /**
      * entry point for the program
+     *
+     * @param args the array of arguments to be passed into the main function
+     *
      */
      public static void main(String[] args) {
 
