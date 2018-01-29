@@ -35,11 +35,7 @@ public class Person5 {
 	  }
 	  if (input.length() <= 2) {
 	    return input;
-<<<<<<< HEAD
 	  }
-=======
-       }
->>>>>>> Yuri
 	  String ans = "";
 	  for (int i = 2; i < input.length();i++ ) {
 	    ans += input.charAt(i);
