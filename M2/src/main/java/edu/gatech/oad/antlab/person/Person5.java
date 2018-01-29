@@ -30,8 +30,14 @@ public class Person5 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 5 put your implementation here
-	  return null;
+	  if (input == null) {
+	    return null;
+	  }
+	  String ans = "";
+	  for (int i = 0;i < input.length();i++ ) {
+	    ans += input.charAt((i + 2) % (input.length() + 1));
+	  }
+	  return ans;
 	}
 	
 	/**
@@ -47,3 +53,4 @@ public class Person5 {
 	}
 
 }
+
