@@ -34,7 +34,7 @@ public class Person6 {
 			return "";
 		} else if (input.length() <= 2) {
 			return input;
-		} else if (input.length() > 2) {
+		} else {
 			return input.substring(2, input.length()) + input.substring(0, 2);
 		}
 	}
